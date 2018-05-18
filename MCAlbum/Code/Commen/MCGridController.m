@@ -22,6 +22,8 @@
 - (void)dealloc {
     self.collectionView.delegate = nil;
     self.collectionView.dataSource = nil;
+    self.collectionView.emptyDataSetSource = nil;
+    self.collectionView.emptyDataSetDelegate = nil;
 }
 
 - (void)pullToRefresh {
@@ -29,7 +31,6 @@
 }
 
 - (void)refresh {
-
 }
 
 - (void)viewDidLoad {
@@ -39,25 +40,22 @@
     self.extendedLayoutIncludesOpaqueBars = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
 
-    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
 
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-    self.collectionView.backgroundColor = [AlbumColorStyle babyColorIII];
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
-    self.collectionView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     [self.view addSubview:self.collectionView];
 
-    @weakify(self);
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        @strongify(self);
-        make.edges.equalTo(self.view);
-    }];
+    self.collectionView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.collectionView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
 }
 
 - (void)reloadData {
     [self.collectionView reloadData];
 }
+
+#pragma mark - CollectionDataSource & delegate
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
@@ -69,6 +67,45 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     return nil;
+}
+
+#pragma mark - Empty
+#pragma mark Source
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    return [[NSAttributedString alloc] initWithString:@"暂无数据" attributes:@{NSForegroundColorAttributeName: [UIColor grayColor], NSFontAttributeName: [UIFont systemFontOfSize:17.0f]}];
+}
+
+- (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
+    return [[NSAttributedString alloc] initWithString:@""];
+}
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
+    return [UIImage imageNamed:@"no_comment"];
+}
+
+- (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView {
+    return 30.0f;
+}
+
+#pragma mark Delegate
+
+
+#pragma mark - getter
+
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        _collectionView.backgroundColor = [AlbumColorStyle babyColorIII];
+        _collectionView.emptyDataSetDelegate = self;
+        _collectionView.emptyDataSetSource = self;
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        _collectionView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    }
+    return _collectionView;
 }
 
 

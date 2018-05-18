@@ -4,9 +4,10 @@
 //
 
 #import "MCController.h"
+#import "UIScrollView+EmptyDataSet.h"
 
 
-@interface MCTableController : MCController <UITableViewDataSource, UITableViewDelegate>
+@interface MCTableController : MCController <UITableViewDataSource, UITableViewDelegate, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource>
 
 @property(nonatomic, strong, readonly) UITableView *tableView;
 

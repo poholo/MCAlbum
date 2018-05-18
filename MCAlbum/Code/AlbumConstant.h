@@ -13,7 +13,8 @@
 
 typedef NS_ENUM(NSInteger, AlbumType) {
     AlbumVideo,
-    AlbumPhoto
+    AlbumPhoto,
+    AlbumAll,
 };
 
 typedef NS_ENUM(NSInteger, AlbumEditorOperationType) {

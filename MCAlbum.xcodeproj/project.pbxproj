@@ -47,6 +47,7 @@
 		252CF0C320A001B30003C7FD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 252CF0C220A001B30003C7FD /* Podfile */; };
 		252CF0C520A047290003C7FD /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252CF0C420A047280003C7FD /* AssetsLibrary.framework */; };
 		252CF0C720A047310003C7FD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252CF0C620A047310003C7FD /* Photos.framework */; };
+		259C61DA20AE813100376B14 /* Album.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259C61D920AE813100376B14 /* Album.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		252CF0C220A001B30003C7FD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		252CF0C420A047280003C7FD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		252CF0C620A047310003C7FD /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		259C61D920AE813100376B14 /* Album.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Album.xcassets; sourceTree = "<group>"; };
 		B9E5E7C61BEE15067F5B7E5D /* libPods-MCAlbum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCAlbum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4361B05B999FC99966FF7A8 /* Pods-MCAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCAlbum/Pods-MCAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,15 @@
 			path = Vender;
 			sourceTree = "<group>";
 		};
+		1A666F18FDACE2BC34408825 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				252CF08C209FFF3A0003C7FD /* Assets.xcassets */,
+				259C61D920AE813100376B14 /* Album.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		252CF077209FFF370003C7FD = {
 			isa = PBXGroup;
 			children = (
@@ -227,12 +238,12 @@
 				252CF086209FFF370003C7FD /* ViewController.h */,
 				252CF087209FFF370003C7FD /* ViewController.m */,
 				252CF089209FFF370003C7FD /* Main.storyboard */,
-				252CF08C209FFF3A0003C7FD /* Assets.xcassets */,
 				252CF08E209FFF3A0003C7FD /* LaunchScreen.storyboard */,
 				252CF091209FFF3A0003C7FD /* Info.plist */,
 				252CF092209FFF3A0003C7FD /* main.m */,
 				1A666C461FF53F745AE109E2 /* RootTableController.m */,
 				1A6668C97C3994E4DB649211 /* RootTableController.h */,
+				1A666F18FDACE2BC34408825 /* Resource */,
 			);
 			path = MCAlbum;
 			sourceTree = "<group>";
@@ -354,6 +365,7 @@
 				252CF08D209FFF3A0003C7FD /* Assets.xcassets in Resources */,
 				252CF0C320A001B30003C7FD /* Podfile in Resources */,
 				252CF08B209FFF370003C7FD /* Main.storyboard in Resources */,
+				259C61DA20AE813100376B14 /* Album.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

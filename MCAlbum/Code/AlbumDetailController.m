@@ -288,6 +288,11 @@
     }
 }
 
+#pragma mark - empty
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    return [[NSAttributedString alloc] initWithString:@"相册无数据" attributes:@{NSForegroundColorAttributeName: [UIColor grayColor], NSFontAttributeName: [UIFont systemFontOfSize:17.0f]}];
+}
 
 #pragma mark - getter
 

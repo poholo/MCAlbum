@@ -5,8 +5,10 @@
 
 #import "MCController.h"
 
+#import "UIScrollView+EmptyDataSet.h"
 
-@interface MCGridController : MCController <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@interface MCGridController : MCController <UICollectionViewDelegate, UICollectionViewDataSource, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource>
 
 @property(nonatomic, readonly) UICollectionView *collectionView;
 

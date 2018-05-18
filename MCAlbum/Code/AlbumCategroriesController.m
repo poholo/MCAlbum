@@ -249,18 +249,18 @@
 
 #pragma mark -
 
-- (NSString *)displayNoDataText {
+#pragma mark - empty
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    NSString *str;
     if (self.dataVM.granted) {
-        return self.dataVM.actionDto.albumType == AlbumVideo ? @"相册无视频" : @"相册无照片";
+        str = self.dataVM.actionDto.albumType == AlbumVideo ? @"相册无视频" : @"相册无照片";
     } else {
         NSString *appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleDisplayName"];
         if (!appName) appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleName"];
-        return [NSString stringWithFormat:@"请在%@的\"设置-隐私-照片\"选项中，\r允许%@访问你的手机相册。", [UIDevice currentDevice].model, appName];
+        str = [NSString stringWithFormat:@"请在%@的\"设置-隐私-照片\"选项中，\r允许%@访问你的手机相册。", [UIDevice currentDevice].model, appName];
     }
-}
-
-- (void)displayButtonAction {
-    [self refresh];
+    return [[NSAttributedString alloc] initWithString:str attributes:@{NSForegroundColorAttributeName: [UIColor grayColor], NSFontAttributeName: [UIFont systemFontOfSize:17.0f]}];
 }
 
 #pragma mark - getter

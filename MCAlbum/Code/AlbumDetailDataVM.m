@@ -29,7 +29,7 @@
                     self.currentPos = @(-1);
                     [array enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(MCAssetDto *model, NSUInteger idx, BOOL *stop) {
                         @strongify(self);
-                        [self.dataArray addObject:model];
+//                        [self.dataArray addObject:model];
                     }];
                     [subscriber sendNext:self.dataArray];
                     [subscriber sendCompleted];
@@ -42,7 +42,7 @@
                     self.currentPos = @(-1);
                     [models enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(MCAssetDto *model, NSUInteger idx, BOOL *stop) {
                         @strongify(self);
-                        [self.dataArray addObject:model];
+//                        [self.dataArray addObject:model];
                     }];
                     [subscriber sendNext:self.dataArray];
                     [subscriber sendCompleted];

@@ -8,5 +8,6 @@ target "MCAlbum" do
   pod 'ReactiveCocoa', '2.5'
   pod 'MBProgressHUD'
   pod 'DZNEmptyDataSet'
+  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 
 end

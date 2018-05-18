@@ -21,14 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:[self tableStyle]];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
-    self.tableView.tableFooterView = [UIView new];
-    self.tableView.backgroundColor = self.view.backgroundColor;
     [self.view addSubview:self.tableView];
 
     self.tableView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
@@ -51,6 +43,25 @@
     [self.tableView reloadData];
 }
 
+#pragma mark - Empty
+#pragma mark Source
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    return [[NSAttributedString alloc] initWithString:@"暂无数据" attributes:@{NSForegroundColorAttributeName: [UIColor grayColor], NSFontAttributeName: [UIFont systemFontOfSize:17.0f]}];
+}
+
+- (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
+    return [[NSAttributedString alloc] initWithString:@""];
+}
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
+    return [UIImage imageNamed:@"no_comment"];
+}
+
+- (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView {
+    return 30.0f;
+}
+
 #pragma mark - ASTableDelegate, ASTableDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -67,6 +78,23 @@
 
 - (UITableViewStyle)tableStyle {
     return UITableViewStylePlain;
+}
+
+#pragma mark - getter
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:[self tableStyle]];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        _tableView.emptyDataSetDelegate = self;
+        _tableView.emptyDataSetSource = self;
+        _tableView.tableFooterView = [UIView new];
+        _tableView.backgroundColor = self.view.backgroundColor;
+    }
+    return _tableView;
 }
 
 @end
