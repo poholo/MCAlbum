@@ -1,6 +1,6 @@
 //
 // Created by majiancheng on 2017/9/5.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import "AlbumSelectCollectionCell.h"
@@ -9,7 +9,7 @@
 #import <Masonry.h>
 
 #import "MCAssetDto.h"
-#import "AlbumColorStyle.h"
+#import "AlbumColor.h"
 #import "UIView+Corner.h"
 #import "MCAssetsManager.h"
 
@@ -64,10 +64,10 @@
 
 - (void)changeEdit:(BOOL)isEdit {
     if (isEdit) {
-        [self.imageView addCorner:0 borderColor:[AlbumColorStyle babyColorI]];
+        [self.imageView addCorner:0 borderColor:[AlbumColor colorI]];
         self.indexLabel.hidden = NO;
     } else {
-        [self.imageView addCorner:0 borderColor:[AlbumColorStyle babyColorI] borderWidth:0];
+        [self.imageView addCorner:0 borderColor:[AlbumColor colorI] borderWidth:0];
         self.indexLabel.hidden = YES;
     }
 }
@@ -132,10 +132,10 @@
 - (UILabel *)indexLabel {
     if (!_indexLabel) {
         _indexLabel = [[UILabel alloc] init];
-        _indexLabel.textColor = [AlbumColorStyle babyColorII];
+        _indexLabel.textColor = [AlbumColor colorII];
         _indexLabel.font = [UIFont systemFontOfSize:12];
         _indexLabel.textAlignment = NSTextAlignmentCenter;
-        _indexLabel.backgroundColor = [AlbumColorStyle babyColorI];
+        _indexLabel.backgroundColor = [AlbumColor colorI];
         _indexLabel.hidden = YES;
     }
     return _indexLabel;

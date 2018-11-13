@@ -1,10 +1,10 @@
 //
 // Created by majiancheng on 2017/11/3.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import "AlbumCameraCollectionCell.h"
-#import "AlbumColorStyle.h"
+#import "AlbumColor.h"
 
 #import <Masonry.h>
 
@@ -22,8 +22,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [AlbumColorStyle babyColorII];
-        self.contentView.backgroundColor = [AlbumColorStyle babyColorII];
+        self.backgroundColor = [AlbumColor colorII];
+        self.contentView.backgroundColor = [AlbumColor colorII];
         [self createViews];
         [self addLayout];
     }

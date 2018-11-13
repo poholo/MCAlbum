@@ -1,6 +1,6 @@
 //
 // Created by Jiangmingz on 2017/12/26.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

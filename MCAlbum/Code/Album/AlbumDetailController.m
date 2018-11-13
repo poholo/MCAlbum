@@ -1,6 +1,6 @@
 //
 // Created by majiancheng on 2017/9/2.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import "AlbumDetailController.h"
@@ -73,7 +73,9 @@
 
     [self pullToRefresh];
 
+    @weakify(self);
     [[GCDQueue mainQueue] execute:^{
+        @strongify(self);
         if (self.dataVM.selectionsAssets.count > 0) {
             [self showAlbumSelectView];
         } else {

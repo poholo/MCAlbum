@@ -8,7 +8,7 @@
 #import <Masonry/Masonry.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-#import "AlbumColorStyle.h"
+#import "AlbumColor.h"
 
 
 @interface MCGridController ()
@@ -98,7 +98,7 @@
         UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
 
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-        _collectionView.backgroundColor = [AlbumColorStyle babyColorIII];
+        _collectionView.backgroundColor = [AlbumColor colorIII];
         _collectionView.emptyDataSetDelegate = self;
         _collectionView.emptyDataSetSource = self;
         _collectionView.delegate = self;

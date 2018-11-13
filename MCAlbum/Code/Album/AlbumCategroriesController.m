@@ -1,6 +1,6 @@
 //
 // Created by majiancheng on 2017/9/2.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import "AlbumCategroriesController.h"
@@ -13,7 +13,6 @@
 #import "MCAssetsManager.h"
 #import "AlbumSelectView.h"
 #import "AlbumActionDto.h"
-#import "MCAssetDto.h"
 #import "AlbumUtils.h"
 #import "GCDQueue.h"
 #import "HUDView.h"
@@ -27,9 +26,7 @@
 
 @end
 
-@implementation AlbumCategroriesController {
-
-}
+@implementation AlbumCategroriesController
 
 - (void)dealloc {
 }
@@ -149,13 +146,11 @@
     if (self.dataVM.actionDto.albumEditorOperationType == AlbumEditorOperationNext) {
         switch (self.dataVM.actionDto.creationType) {
             case CreationTypeVideo : {
-                [HUDView show];
                 @weakify(self);
 
             }
                 break;
             case CreationTypeMV: {
-                [HUDView show];
 
             }
                 break;

@@ -1,6 +1,6 @@
 //
 // Created by majiancheng on 2017/9/2.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import "AlbumCategroryCell.h"
@@ -11,7 +11,7 @@
 #import "MCAssetDto.h"
 #import "AlbumActionDto.h"
 #import "MCAssetsManager.h"
-#import "AlbumColorStyle.h"
+#import "AlbumColor.h"
 
 @interface AlbumCategroryCell ()
 
@@ -21,13 +21,9 @@
 
 @end
 
-@implementation AlbumCategroryCell {
+@implementation AlbumCategroryCell
 
-}
-
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString
-
-*)reuseIdentifier {
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nullable NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self createView];
@@ -83,10 +79,6 @@
     }];
 }
 
-+ (CGFloat)height {
-    return 90.0f;
-}
-
 #pragma mark - getter
 
 - (UIImageView *)alumImageView {
@@ -102,7 +94,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.textColor = [AlbumColorStyle babyColorMajor];
+        _titleLabel.textColor = [AlbumColor colorMajor];
         _titleLabel.font = [UIFont boldSystemFontOfSize:15];
     }
     return _titleLabel;
@@ -111,10 +103,14 @@
 - (UILabel *)numLabel {
     if (!_numLabel) {
         _numLabel = [[UILabel alloc] init];
-        _numLabel.textColor = [AlbumColorStyle babyColorMinorI];
+        _numLabel.textColor = [AlbumColor colorMinorI];
         _numLabel.font = [UIFont systemFontOfSize:12];
     }
     return _numLabel;
+}
+
++ (CGFloat)height {
+    return 90.0f;
 }
 
 @end

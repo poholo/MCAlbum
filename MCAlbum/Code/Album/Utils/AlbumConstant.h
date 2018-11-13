@@ -3,7 +3,7 @@
 //  BabyShow
 //
 //  Created by majiancheng on 2017/9/2.
-//  Copyright © 2017年 挖趣智慧科技（北京）有限公司. All rights reserved.
+//  Copyright © 2017年 mjc inc. All rights reserved.
 //
 
 #ifndef AlbumConstant_h

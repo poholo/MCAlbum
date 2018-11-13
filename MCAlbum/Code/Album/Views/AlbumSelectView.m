@@ -1,6 +1,6 @@
 //
 // Created by majiancheng on 2017/9/5.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import "AlbumSelectView.h"
@@ -9,7 +9,7 @@
 #import <Masonry.h>
 
 #import "MCAssetDto.h"
-#import "AlbumColorStyle.h"
+#import "AlbumColor.h"
 #import "AlbumSelectCollectionCell.h"
 #import "AlbumActionDto.h"
 
@@ -40,7 +40,7 @@
     [self addSubview:self.titleLabel];
     [self addSubview:self.confirmBtn];
     [self addSubview:self.collectionView];
-    self.backgroundColor = [AlbumColorStyle babyColorII];
+    self.backgroundColor = [AlbumColor colorII];
 }
 
 - (void)addLayout {
@@ -110,7 +110,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.textColor = [AlbumColorStyle babyColorMinorI];
+        _titleLabel.textColor = [AlbumColor colorMinorI];
         _titleLabel.font = [UIFont systemFontOfSize:12];
         [self refreshTitleLabel:1 max:4 albumType:AlbumPhoto];
     }
@@ -121,17 +121,17 @@
     if (albumType == AlbumVideo) {
         _titleLabel.text = [NSString stringWithFormat:@"已选择%zd个片段", self.assets.count];
         NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_titleLabel.text attributes:
-                @{NSForegroundColorAttributeName: [AlbumColorStyle babyColorMinorI],
+                @{NSForegroundColorAttributeName: [AlbumColor colorMinorI],
                         NSFontAttributeName: [UIFont systemFontOfSize:12]}];
-        [attributedString                                  addAttributes:@{NSForegroundColorAttributeName: [AlbumColorStyle babyColorI],
+        [attributedString                                  addAttributes:@{NSForegroundColorAttributeName: [AlbumColor colorI],
                 NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(3, 1)];
         _titleLabel.attributedText = attributedString;
     } else if (albumType == AlbumPhoto) {
-        _titleLabel.text = [NSString stringWithFormat:@"请选择%zd-%zd张宝宝的%@", min, max, albumType == AlbumVideo ? @"视频" : @"照片"];
+        _titleLabel.text = [NSString stringWithFormat:@"请选择%zd-%zd张%@", min, max, albumType == AlbumVideo ? @"视频" : @"照片"];
         NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_titleLabel.text attributes:
-                @{NSForegroundColorAttributeName: [AlbumColorStyle babyColorMinorI],
+                @{NSForegroundColorAttributeName: [AlbumColor colorMinorI],
                         NSFontAttributeName: [UIFont systemFontOfSize:12]}];
-        [attributedString                                  addAttributes:@{NSForegroundColorAttributeName: [AlbumColorStyle babyColorI],
+        [attributedString                                  addAttributes:@{NSForegroundColorAttributeName: [AlbumColor colorI],
                 NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(3, 3)];
         _titleLabel.attributedText = attributedString;
     }
@@ -141,7 +141,7 @@
     if (!_confirmBtn) {
         _confirmBtn = [[UIButton alloc] init];
         [_confirmBtn setTitle:@"确认" forState:UIControlStateNormal];
-        [_confirmBtn setTitleColor:[AlbumColorStyle babyColorV] forState:UIControlStateNormal];
+        [_confirmBtn setTitleColor:[AlbumColor colorV] forState:UIControlStateNormal];
         _confirmBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         [_confirmBtn addTarget:self action:@selector(confirmBtnClick) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -157,7 +157,7 @@
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-        _collectionView.backgroundColor = [AlbumColorStyle babyColorII];
+        _collectionView.backgroundColor = [AlbumColor colorII];
 
         _collectionView.dataSource = self;
         _collectionView.delegate = self;

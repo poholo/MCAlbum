@@ -1,6 +1,6 @@
 //
 // Created by majiancheng on 2017/9/4.
-// Copyright (c) 2017 挖趣智慧科技（北京）有限公司. All rights reserved.
+// Copyright (c) 2017 mjc inc. All rights reserved.
 //
 
 #import "AlbumCollectionCell.h"
@@ -9,7 +9,7 @@
 
 #import "MCAssetDto.h"
 #import "MCAssetsManager.h"
-#import "AlbumColorStyle.h"
+#import "AlbumColor.h"
 
 @interface AlbumCollectionCell ()
 
@@ -70,7 +70,7 @@
 
 
 - (void)createView {
-    self.contentView.backgroundColor = [AlbumColorStyle babyColorIII];
+    self.contentView.backgroundColor = [AlbumColor colorIII];
     [self.contentView addSubview:self.albumImageView];
     [self.contentView addSubview:self.timeLabel];
     [self.contentView addSubview:self.coverView];
@@ -98,7 +98,7 @@
     if (!_timeLabel) {
         _timeLabel = [[UILabel alloc] init];
         _timeLabel.font = [UIFont systemFontOfSize:12];
-        _timeLabel.textColor = [AlbumColorStyle babyColorII];
+        _timeLabel.textColor = [AlbumColor colorII];
         _timeLabel.textAlignment = NSTextAlignmentRight;
     }
     return _timeLabel;
@@ -107,7 +107,7 @@
 - (UIView *)coverView {
     if (!_coverView) {
         _coverView = [[UIView alloc] init];
-        _coverView.backgroundColor = [AlbumColorStyle babyColorII];
+        _coverView.backgroundColor = [AlbumColor colorII];
         _coverView.alpha = .5;
     }
     return _coverView;
