@@ -7,7 +7,7 @@
 #import "MCAssetDto.h"
 
 #import <AssetsLibrary/AssetsLibrary.h>
-#import <Photos/PHAsset.h>
+#import <Photos/Photos.h>
 
 #import <ReactiveCocoa.h>
 

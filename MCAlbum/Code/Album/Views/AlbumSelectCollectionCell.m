@@ -4,12 +4,14 @@
 //
 
 #import "AlbumSelectCollectionCell.h"
-#import "MCAssetDto.h"
-#import "MCAssetsManager.h"
-#import "AlbumColorStyle.h"
 
 #import <ReactiveCocoa.h>
 #import <Masonry.h>
+
+#import "MCAssetDto.h"
+#import "AlbumColorStyle.h"
+#import "UIView+Corner.h"
+#import "MCAssetsManager.h"
 
 
 @interface AlbumSelectCollectionCell ()
@@ -62,21 +64,19 @@
 
 - (void)changeEdit:(BOOL)isEdit {
     if (isEdit) {
-//        [ViewShapeMask cornerView:self.imageView radius:0 border:1 color:[AlbumColorStyle babyColorI]];
+        [self.imageView addCorner:0 borderColor:[AlbumColorStyle babyColorI]];
         self.indexLabel.hidden = NO;
     } else {
-//        [ViewShapeMask cornerView:self.imageView radius:0 border:0 color:nil];
+        [self.imageView addCorner:0 borderColor:[AlbumColorStyle babyColorI] borderWidth:0];
         self.indexLabel.hidden = YES;
     }
 }
-
 
 - (void)delBtnClick {
     if ([self.delegate respondsToSelector:@selector(albumSelectCollectionCellDel:)]) {
         [self.delegate albumSelectCollectionCellDel:self.indexPath];
     }
 }
-
 
 - (void)createViews {
     [self.contentView addSubview:self.imageView];

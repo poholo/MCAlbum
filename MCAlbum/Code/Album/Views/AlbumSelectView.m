@@ -141,7 +141,7 @@
     if (!_confirmBtn) {
         _confirmBtn = [[UIButton alloc] init];
         [_confirmBtn setTitle:@"确认" forState:UIControlStateNormal];
-        [_confirmBtn setTitleColor:[AlbumColorStyle babyColorII] forState:UIControlStateNormal];
+        [_confirmBtn setTitleColor:[AlbumColorStyle babyColorV] forState:UIControlStateNormal];
         _confirmBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         [_confirmBtn addTarget:self action:@selector(confirmBtnClick) forControlEvents:UIControlEventTouchUpInside];
     }

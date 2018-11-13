@@ -42,7 +42,7 @@
     if (indexPath.row == 0) {
         AlbumActionDto *albumActionDto = [AlbumActionDto new];
         albumActionDto.creationType = CreationTypePhotoAlbum;
-        albumActionDto.albumType = AlbumVideo;
+        albumActionDto.albumType = AlbumPhoto;
         albumActionDto.maxNum = 4;
         albumActionDto.canRepeatSelected = YES;
         albumActionDto.albumEditorOperationType = AlbumEditorOperationNext;

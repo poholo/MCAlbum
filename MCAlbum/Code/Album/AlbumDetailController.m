@@ -110,7 +110,7 @@
             [self.view addSubview:self.albumSelectView];
             [self.albumSelectView loadData:self.dataVM.selectionsAssets albumActionDto:self.dataVM.actionDto];
             [UIView animateWithDuration:.3 animations:^{
-                self.albumSelectView.frame = CGRectMake(0, CGRectGetWidth(self.view.frame) - 150.0f, CGRectGetHeight(self.view.frame), 150.0f);
+                self.albumSelectView.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - 150.0f, CGRectGetWidth(self.view.frame), 150.0f);
             }                completion:^(BOOL finished) {
 
             }];
@@ -125,7 +125,7 @@
 
 - (void)hideAlbumSelectView {
     [UIView animateWithDuration:.3 animations:^{
-        _albumSelectView.frame = CGRectMake(0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame), 150.0f);
+        _albumSelectView.frame = CGRectMake(0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame), 150.0f);
     }                completion:^(BOOL finished) {
         [_albumSelectView removeFromSuperview];
         _albumSelectView = nil;
@@ -305,7 +305,7 @@
 
 - (AlbumSelectView *)albumSelectView {
     if (!_albumSelectView) {
-        _albumSelectView = [[AlbumSelectView alloc] initWithFrame:CGRectMake(0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame), 150.0f)];
+        _albumSelectView = [[AlbumSelectView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame), 150.0f)];
         _albumSelectView.delegate = self;
     }
     return _albumSelectView;

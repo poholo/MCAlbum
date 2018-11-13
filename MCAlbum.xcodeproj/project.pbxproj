@@ -8,23 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		169C33C56F6B43CE89B0FCC3 /* libPods-MCAlbum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E5E7C61BEE15067F5B7E5D /* libPods-MCAlbum.a */; };
+		1A66602FA123CD0DA0C6F331 /* AlbumCameraCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6665C246B21905B3519835 /* AlbumCameraCollectionCell.m */; };
+		1A66607F165892B199F2EFB0 /* MCAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6663A8226938B4850403BE /* MCAssetsManager.m */; };
 		1A66610FC4397715A227EB1F /* MCGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666859F20E198F77C18A11 /* MCGridController.m */; };
 		1A66614BA3CF4D671B59ABAE /* RootTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666C461FF53F745AE109E2 /* RootTableController.m */; };
-		1A6662B12D4C115B6CEC9D48 /* MCAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666FE6907B2E6C861D8CC8 /* MCAssetsManager.m */; };
+		1A6661CC48FFADF66D0CF124 /* AlbumActionDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666D4D489624073E50018F /* AlbumActionDto.m */; };
+		1A6663029146B60A2264897E /* AlbumSelectCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666DE59805BC70AE5C8A04 /* AlbumSelectCollectionCell.m */; };
+		1A66632FEF154CD2399ABA30 /* AlbumDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6665FBDFBCEDFF32FD200E /* AlbumDetailController.m */; };
+		1A666331DC81714E2168B8F7 /* AlbumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666986619B202F425B59F0 /* AlbumCollectionCell.m */; };
 		1A666344073B20198F68A7FF /* MCTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666007DAA5B6DCB452E68A /* MCTableController.m */; };
-		1A66658B190DA0147E3A74A7 /* AlbumColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666C7C30611003A82BBAFE /* AlbumColorStyle.m */; };
 		1A6666939FB019817E859E90 /* HUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6662A84B7BD198C2FE0D23 /* HUDView.m */; };
 		1A66670451E7D982F59B77EC /* MMRoutable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6667BA115485135858D500 /* MMRoutable.m */; };
 		1A66672D5C83AC8CFE3163E3 /* MCTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66687A257D81D4323E647B /* MCTableCell.m */; };
 		1A666732559EF30D41A1F5A6 /* MCDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6669A7B5CA50C89C7A0452 /* MCDataVM.m */; };
+		1A6667A30495F821A167F3E9 /* AlbumCategroriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6667A2FC7C8F8E5C6B318E /* AlbumCategroriesController.m */; };
 		1A6668348D5EF6DD2C21B37E /* MCCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666D183FCBD4EC178B0706 /* MCCollectionCell.m */; };
+		1A66684AE508D218E1DACA78 /* AlbumColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66656C449089DD069E8D76 /* AlbumColorStyle.m */; };
+		1A6668E0D725516587DE9643 /* AlbumSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6666BFBFDC093D0B4376BE /* AlbumSelectView.m */; };
 		1A6669873C4396BC84D9AC79 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6668585ED43E6C2D8AD0EF /* GCDQueue.m */; };
 		1A666A8E0D490B6B4A811128 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6664EB27B1A6BA2362BDAB /* GCDGroup.m */; };
 		1A666B0849B45ED85A9338D9 /* GCDReTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6662839F170A7DA3B261A3 /* GCDReTimer.m */; };
 		1A666B15A641E5676BD67837 /* GCDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666FA11B6208EFFF899BB3 /* GCDUtils.m */; };
 		1A666B3C6CE1E34F770637EE /* MCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666F032C928C5F175010B4 /* MCController.m */; };
+		1A666CFC4FF35199991D2D24 /* AlbumCategroryDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666446AB04576358D8B7CB /* AlbumCategroryDataVM.m */; };
+		1A666E226BAA4CFCDBD28E4C /* MCAssetDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666EC2C77178A3ADDE2A77 /* MCAssetDto.m */; };
+		1A666E2723B4DB014CA6698C /* AlbumUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66666B90B45F9FF4FE52EA /* AlbumUtils.m */; };
 		1A666E9F430EA2D4A68F43F1 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666FC6593033FA6061A9F2 /* GCDTimer.m */; };
-		1A666F00F7C8A34F9948D3C7 /* MCAssetDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6668FB5321AF5DC0D17462 /* MCAssetDto.m */; };
+		1A666ECA21068B5BFDB841C6 /* AlbumRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66640AF0F50598560F7488 /* AlbumRoute.m */; };
+		1A666ED8FFB5E4C8F52D9507 /* AlbumDetailDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666B67E62445EE5301D183 /* AlbumDetailDataVM.m */; };
+		1A666EFBEA6A26D0411BBF2F /* AlbumCategroryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A666230B9CFCE530B3BBDB3 /* AlbumCategroryCell.m */; };
 		1A666F957433504FDFAA10FD /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66659DF6FED73EF14B34BD /* GCDSemaphore.m */; };
 		252CF085209FFF370003C7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF084209FFF370003C7FD /* AppDelegate.m */; };
 		252CF088209FFF370003C7FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF087209FFF370003C7FD /* ViewController.m */; };
@@ -32,21 +44,10 @@
 		252CF08D209FFF3A0003C7FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252CF08C209FFF3A0003C7FD /* Assets.xcassets */; };
 		252CF090209FFF3A0003C7FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252CF08E209FFF3A0003C7FD /* LaunchScreen.storyboard */; };
 		252CF093209FFF3A0003C7FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF092209FFF3A0003C7FD /* main.m */; };
-		252CF0B5209FFF960003C7FD /* AlbumDetailDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF09D209FFF960003C7FD /* AlbumDetailDataVM.m */; };
-		252CF0B6209FFF960003C7FD /* AlbumCategroryDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF09E209FFF960003C7FD /* AlbumCategroryDataVM.m */; };
-		252CF0B7209FFF960003C7FD /* AlbumUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0A0209FFF960003C7FD /* AlbumUtils.m */; };
-		252CF0B8209FFF960003C7FD /* AlbumSelectCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0A1209FFF960003C7FD /* AlbumSelectCollectionCell.m */; };
-		252CF0B9209FFF960003C7FD /* AlbumCategroriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0A3209FFF960003C7FD /* AlbumCategroriesController.m */; };
-		252CF0BA209FFF960003C7FD /* AlbumActionDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0A5209FFF960003C7FD /* AlbumActionDto.m */; };
-		252CF0BB209FFF960003C7FD /* AlbumRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0A7209FFF960003C7FD /* AlbumRoute.m */; };
-		252CF0BC209FFF960003C7FD /* AlbumSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0A8209FFF960003C7FD /* AlbumSelectView.m */; };
-		252CF0BD209FFF960003C7FD /* AlbumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0A9209FFF960003C7FD /* AlbumCollectionCell.m */; };
-		252CF0BE209FFF960003C7FD /* AlbumCategroryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0AC209FFF960003C7FD /* AlbumCategroryCell.m */; };
-		252CF0C0209FFF960003C7FD /* AlbumDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0B2209FFF960003C7FD /* AlbumDetailController.m */; };
-		252CF0C1209FFF960003C7FD /* AlbumCameraCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 252CF0B4209FFF960003C7FD /* AlbumCameraCollectionCell.m */; };
 		252CF0C320A001B30003C7FD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 252CF0C220A001B30003C7FD /* Podfile */; };
 		252CF0C520A047290003C7FD /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252CF0C420A047280003C7FD /* AssetsLibrary.framework */; };
 		252CF0C720A047310003C7FD /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252CF0C620A047310003C7FD /* Photos.framework */; };
+		25409A34219A764400F29736 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = 25409A33219A764400F29736 /* UIView+Corner.m */; };
 		259C61DA20AE813100376B14 /* Album.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259C61D920AE813100376B14 /* Album.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -54,41 +55,66 @@
 		1619A1B3BFE953EAD2E0288B /* Pods-MCAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCAlbum/Pods-MCAlbum.release.xcconfig"; sourceTree = "<group>"; };
 		1A666007DAA5B6DCB452E68A /* MCTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableController.m; sourceTree = "<group>"; };
 		1A666123387F669C3CE0996C /* MCTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableCell.h; sourceTree = "<group>"; };
+		1A666179C876CA13B33FDBE4 /* AlbumRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumRoute.h; sourceTree = "<group>"; };
+		1A6661F574901733597E5648 /* AlbumCategroriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCategroriesController.h; sourceTree = "<group>"; };
+		1A666230B9CFCE530B3BBDB3 /* AlbumCategroryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCategroryCell.m; sourceTree = "<group>"; };
 		1A6662839F170A7DA3B261A3 /* GCDReTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDReTimer.m; sourceTree = "<group>"; };
 		1A6662A84B7BD198C2FE0D23 /* HUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDView.m; sourceTree = "<group>"; };
 		1A666309D3A1F1BC3EACF953 /* MCTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableController.h; sourceTree = "<group>"; };
+		1A6663853769D71CDFF8113C /* AlbumSelectCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumSelectCollectionCell.h; sourceTree = "<group>"; };
+		1A6663A8226938B4850403BE /* MCAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAssetsManager.m; sourceTree = "<group>"; };
+		1A6663B074FB84C3FB50F6EA /* MCAssetDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAssetDto.h; sourceTree = "<group>"; };
+		1A66640AF0F50598560F7488 /* AlbumRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumRoute.m; sourceTree = "<group>"; };
+		1A666446AB04576358D8B7CB /* AlbumCategroryDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCategroryDataVM.m; sourceTree = "<group>"; };
 		1A666459F0D8D265A5ED91E2 /* GCDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDUtils.h; sourceTree = "<group>"; };
 		1A6664EB27B1A6BA2362BDAB /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		1A6664EC6A17F941DFFC7075 /* AlbumColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumColorStyle.h; sourceTree = "<group>"; };
 		1A666544E2D2AA87D649A29C /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
 		1A66654F8EBFB3F226B841F5 /* MCGridController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCGridController.h; sourceTree = "<group>"; };
 		1A666565EA5AE1623082870A /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		1A66656C449089DD069E8D76 /* AlbumColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumColorStyle.m; sourceTree = "<group>"; };
+		1A66656EE8DA99A0695456D3 /* AlbumCategroryDataVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCategroryDataVM.h; sourceTree = "<group>"; };
 		1A66659DF6FED73EF14B34BD /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		1A6665BF127E9933BBA81FBA /* AlbumDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailController.h; sourceTree = "<group>"; };
+		1A6665C246B21905B3519835 /* AlbumCameraCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCameraCollectionCell.m; sourceTree = "<group>"; };
+		1A6665FBDFBCEDFF32FD200E /* AlbumDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailController.m; sourceTree = "<group>"; };
+		1A66666B90B45F9FF4FE52EA /* AlbumUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumUtils.m; sourceTree = "<group>"; };
+		1A6666BFBFDC093D0B4376BE /* AlbumSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumSelectView.m; sourceTree = "<group>"; };
 		1A66671C3F86BB7BD00864F4 /* MMRoutable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRoutable.h; sourceTree = "<group>"; };
-		1A66672C9464E6CB79E62581 /* AlbumColorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumColorStyle.h; sourceTree = "<group>"; };
+		1A66676CDA1BBC4F69C67CED /* AlbumCameraCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCameraCollectionCell.h; sourceTree = "<group>"; };
+		1A66678875A8C0AC329D00ED /* AlbumConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumConstant.h; sourceTree = "<group>"; };
+		1A6667A2FC7C8F8E5C6B318E /* AlbumCategroriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCategroriesController.m; sourceTree = "<group>"; };
 		1A6667AABC327F6D9E75BD9D /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
 		1A6667BA115485135858D500 /* MMRoutable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRoutable.m; sourceTree = "<group>"; };
-		1A6667FA87887293B8F05F4B /* MCAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAssetsManager.h; sourceTree = "<group>"; };
 		1A6668585ED43E6C2D8AD0EF /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
 		1A666859F20E198F77C18A11 /* MCGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCGridController.m; sourceTree = "<group>"; };
 		1A66687A257D81D4323E647B /* MCTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableCell.m; sourceTree = "<group>"; };
+		1A66688144AFD6498DBB6A0D /* AlbumDetailDataVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailDataVM.h; sourceTree = "<group>"; };
 		1A6668C97C3994E4DB649211 /* RootTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableController.h; sourceTree = "<group>"; };
-		1A6668FB5321AF5DC0D17462 /* MCAssetDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAssetDto.m; sourceTree = "<group>"; };
+		1A666986619B202F425B59F0 /* AlbumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionCell.m; sourceTree = "<group>"; };
 		1A6669A7B5CA50C89C7A0452 /* MCDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataVM.m; sourceTree = "<group>"; };
-		1A666A22F2557169120E6C33 /* MCAssetDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAssetDto.h; sourceTree = "<group>"; };
+		1A6669C4F2BBAA7322A3A558 /* AlbumActionDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumActionDto.h; sourceTree = "<group>"; };
+		1A666A1492FFA95EDE29D740 /* AlbumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionCell.h; sourceTree = "<group>"; };
 		1A666A7563DA288B03ED16EC /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
 		1A666AFE1DE3C2845E9F5F8C /* HUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDView.h; sourceTree = "<group>"; };
+		1A666B67E62445EE5301D183 /* AlbumDetailDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailDataVM.m; sourceTree = "<group>"; };
+		1A666BACE3065E8F950930AA /* MCAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAssetsManager.h; sourceTree = "<group>"; };
 		1A666C461FF53F745AE109E2 /* RootTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableController.m; sourceTree = "<group>"; };
-		1A666C7C30611003A82BBAFE /* AlbumColorStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumColorStyle.m; sourceTree = "<group>"; };
+		1A666D0A904AB038F99BB658 /* AlbumUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumUtils.h; sourceTree = "<group>"; };
 		1A666D183FCBD4EC178B0706 /* MCCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCollectionCell.m; sourceTree = "<group>"; };
+		1A666D4D489624073E50018F /* AlbumActionDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumActionDto.m; sourceTree = "<group>"; };
+		1A666D953E765FF05A791057 /* AlbumSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumSelectView.h; sourceTree = "<group>"; };
 		1A666DDC51D904967E71B679 /* MCCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCollectionCell.h; sourceTree = "<group>"; };
+		1A666DE59805BC70AE5C8A04 /* AlbumSelectCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumSelectCollectionCell.m; sourceTree = "<group>"; };
 		1A666E30A13F8596639BD110 /* MCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCController.h; sourceTree = "<group>"; };
 		1A666E5748F7F062BD24798F /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		1A666EC2C77178A3ADDE2A77 /* MCAssetDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAssetDto.m; sourceTree = "<group>"; };
 		1A666F032C928C5F175010B4 /* MCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCController.m; sourceTree = "<group>"; };
 		1A666F22173D6733CA6CCBB5 /* GCDReTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDReTimer.h; sourceTree = "<group>"; };
+		1A666F5D1245672113FF1FBE /* AlbumCategroryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCategroryCell.h; sourceTree = "<group>"; };
 		1A666FA11B6208EFFF899BB3 /* GCDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDUtils.m; sourceTree = "<group>"; };
 		1A666FC6593033FA6061A9F2 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		1A666FD3C4804B5BE6915D10 /* MCDataVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataVM.h; sourceTree = "<group>"; };
-		1A666FE6907B2E6C861D8CC8 /* MCAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAssetsManager.m; sourceTree = "<group>"; };
 		252CF080209FFF370003C7FD /* MCAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		252CF083209FFF370003C7FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		252CF084209FFF370003C7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,34 +125,11 @@
 		252CF08F209FFF3A0003C7FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		252CF091209FFF3A0003C7FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		252CF092209FFF3A0003C7FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		252CF09A209FFF960003C7FD /* AlbumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionCell.h; sourceTree = "<group>"; };
-		252CF09B209FFF960003C7FD /* AlbumSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumSelectView.h; sourceTree = "<group>"; };
-		252CF09C209FFF960003C7FD /* AlbumConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumConstant.h; sourceTree = "<group>"; };
-		252CF09D209FFF960003C7FD /* AlbumDetailDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailDataVM.m; sourceTree = "<group>"; };
-		252CF09E209FFF960003C7FD /* AlbumCategroryDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCategroryDataVM.m; sourceTree = "<group>"; };
-		252CF09F209FFF960003C7FD /* AlbumCategroryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCategroryCell.h; sourceTree = "<group>"; };
-		252CF0A0209FFF960003C7FD /* AlbumUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumUtils.m; sourceTree = "<group>"; };
-		252CF0A1209FFF960003C7FD /* AlbumSelectCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumSelectCollectionCell.m; sourceTree = "<group>"; };
-		252CF0A2209FFF960003C7FD /* AlbumDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailController.h; sourceTree = "<group>"; };
-		252CF0A3209FFF960003C7FD /* AlbumCategroriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCategroriesController.m; sourceTree = "<group>"; };
-		252CF0A5209FFF960003C7FD /* AlbumActionDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumActionDto.m; sourceTree = "<group>"; };
-		252CF0A6209FFF960003C7FD /* AlbumCameraCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCameraCollectionCell.h; sourceTree = "<group>"; };
-		252CF0A7209FFF960003C7FD /* AlbumRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumRoute.m; sourceTree = "<group>"; };
-		252CF0A8209FFF960003C7FD /* AlbumSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumSelectView.m; sourceTree = "<group>"; };
-		252CF0A9209FFF960003C7FD /* AlbumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionCell.m; sourceTree = "<group>"; };
-		252CF0AA209FFF960003C7FD /* AlbumSelectCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumSelectCollectionCell.h; sourceTree = "<group>"; };
-		252CF0AB209FFF960003C7FD /* AlbumUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumUtils.h; sourceTree = "<group>"; };
-		252CF0AC209FFF960003C7FD /* AlbumCategroryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCategroryCell.m; sourceTree = "<group>"; };
-		252CF0AD209FFF960003C7FD /* AlbumCategroryDataVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCategroryDataVM.h; sourceTree = "<group>"; };
-		252CF0AE209FFF960003C7FD /* AlbumDetailDataVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailDataVM.h; sourceTree = "<group>"; };
-		252CF0AF209FFF960003C7FD /* AlbumActionDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumActionDto.h; sourceTree = "<group>"; };
-		252CF0B1209FFF960003C7FD /* AlbumCategroriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCategroriesController.h; sourceTree = "<group>"; };
-		252CF0B2209FFF960003C7FD /* AlbumDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailController.m; sourceTree = "<group>"; };
-		252CF0B3209FFF960003C7FD /* AlbumRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumRoute.h; sourceTree = "<group>"; };
-		252CF0B4209FFF960003C7FD /* AlbumCameraCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCameraCollectionCell.m; sourceTree = "<group>"; };
 		252CF0C220A001B30003C7FD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		252CF0C420A047280003C7FD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		252CF0C620A047310003C7FD /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		25409A32219A764400F29736 /* UIView+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
+		25409A33219A764400F29736 /* UIView+Corner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
 		259C61D920AE813100376B14 /* Album.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Album.xcassets; sourceTree = "<group>"; };
 		B9E5E7C61BEE15067F5B7E5D /* libPods-MCAlbum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCAlbum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4361B05B999FC99966FF7A8 /* Pods-MCAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCAlbum/Pods-MCAlbum.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,19 +149,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6661B85B3C2A56E20FD51A /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				1A666179C876CA13B33FDBE4 /* AlbumRoute.h */,
+				1A66656EE8DA99A0695456D3 /* AlbumCategroryDataVM.h */,
+				1A6667A2FC7C8F8E5C6B318E /* AlbumCategroriesController.m */,
+				1A66688144AFD6498DBB6A0D /* AlbumDetailDataVM.h */,
+				1A666446AB04576358D8B7CB /* AlbumCategroryDataVM.m */,
+				1A6665BF127E9933BBA81FBA /* AlbumDetailController.h */,
+				1A6661F574901733597E5648 /* AlbumCategroriesController.h */,
+				1A666B67E62445EE5301D183 /* AlbumDetailDataVM.m */,
+				1A6665C246B21905B3519835 /* AlbumCameraCollectionCell.m */,
+				1A6665FBDFBCEDFF32FD200E /* AlbumDetailController.m */,
+				1A66676CDA1BBC4F69C67CED /* AlbumCameraCollectionCell.h */,
+				1A66640AF0F50598560F7488 /* AlbumRoute.m */,
+				1A666C18C343F51F01223632 /* Views */,
+				1A6664E50D1C41EA52729985 /* Models */,
+				1A66678E99746FD8B794B22F /* Utils */,
+				1A6662E199BE6CC6F5AEA26D /* Manager */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		1A6662E199BE6CC6F5AEA26D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1A666BACE3065E8F950930AA /* MCAssetsManager.h */,
+				1A6663A8226938B4850403BE /* MCAssetsManager.m */,
+				1A666EC2C77178A3ADDE2A77 /* MCAssetDto.m */,
+				1A6663B074FB84C3FB50F6EA /* MCAssetDto.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		1A6664E50D1C41EA52729985 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A6669C4F2BBAA7322A3A558 /* AlbumActionDto.h */,
+				1A666D4D489624073E50018F /* AlbumActionDto.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A66678E99746FD8B794B22F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A6664EC6A17F941DFFC7075 /* AlbumColorStyle.h */,
+				1A66656C449089DD069E8D76 /* AlbumColorStyle.m */,
+				1A66678875A8C0AC329D00ED /* AlbumConstant.h */,
+				1A666D0A904AB038F99BB658 /* AlbumUtils.h */,
+				1A66666B90B45F9FF4FE52EA /* AlbumUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		1A666ACE1455BD05B9E24E7C /* Commen */ = {
 			isa = PBXGroup;
 			children = (
+				25409A32219A764400F29736 /* UIView+Corner.h */,
+				25409A33219A764400F29736 /* UIView+Corner.m */,
 				1A66687A257D81D4323E647B /* MCTableCell.m */,
 				1A666123387F669C3CE0996C /* MCTableCell.h */,
 				1A666F032C928C5F175010B4 /* MCController.m */,
 				1A666E30A13F8596639BD110 /* MCController.h */,
 				1A666007DAA5B6DCB452E68A /* MCTableController.m */,
 				1A666309D3A1F1BC3EACF953 /* MCTableController.h */,
-				1A666FE6907B2E6C861D8CC8 /* MCAssetsManager.m */,
-				1A6667FA87887293B8F05F4B /* MCAssetsManager.h */,
-				1A6668FB5321AF5DC0D17462 /* MCAssetDto.m */,
-				1A666A22F2557169120E6C33 /* MCAssetDto.h */,
 				1A6669A7B5CA50C89C7A0452 /* MCDataVM.m */,
 				1A666FD3C4804B5BE6915D10 /* MCDataVM.h */,
 				1A666D183FCBD4EC178B0706 /* MCCollectionCell.m */,
@@ -191,6 +247,21 @@
 				1A66659DF6FED73EF14B34BD /* GCDSemaphore.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		1A666C18C343F51F01223632 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A666986619B202F425B59F0 /* AlbumCollectionCell.m */,
+				1A666A1492FFA95EDE29D740 /* AlbumCollectionCell.h */,
+				1A666F5D1245672113FF1FBE /* AlbumCategroryCell.h */,
+				1A666230B9CFCE530B3BBDB3 /* AlbumCategroryCell.m */,
+				1A6663853769D71CDFF8113C /* AlbumSelectCollectionCell.h */,
+				1A666D953E765FF05A791057 /* AlbumSelectView.h */,
+				1A6666BFBFDC093D0B4376BE /* AlbumSelectView.m */,
+				1A666DE59805BC70AE5C8A04 /* AlbumSelectCollectionCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1A666CC3FBE52961420D0226 /* Vender */ = {
@@ -251,35 +322,9 @@
 		252CF099209FFF960003C7FD /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				252CF09A209FFF960003C7FD /* AlbumCollectionCell.h */,
-				252CF09B209FFF960003C7FD /* AlbumSelectView.h */,
-				252CF09C209FFF960003C7FD /* AlbumConstant.h */,
-				252CF09D209FFF960003C7FD /* AlbumDetailDataVM.m */,
-				252CF09E209FFF960003C7FD /* AlbumCategroryDataVM.m */,
-				252CF09F209FFF960003C7FD /* AlbumCategroryCell.h */,
-				252CF0A0209FFF960003C7FD /* AlbumUtils.m */,
-				252CF0A1209FFF960003C7FD /* AlbumSelectCollectionCell.m */,
-				252CF0A2209FFF960003C7FD /* AlbumDetailController.h */,
-				252CF0A3209FFF960003C7FD /* AlbumCategroriesController.m */,
-				252CF0A5209FFF960003C7FD /* AlbumActionDto.m */,
-				252CF0A6209FFF960003C7FD /* AlbumCameraCollectionCell.h */,
-				252CF0A7209FFF960003C7FD /* AlbumRoute.m */,
-				252CF0A8209FFF960003C7FD /* AlbumSelectView.m */,
-				252CF0A9209FFF960003C7FD /* AlbumCollectionCell.m */,
-				252CF0AA209FFF960003C7FD /* AlbumSelectCollectionCell.h */,
-				252CF0AB209FFF960003C7FD /* AlbumUtils.h */,
-				252CF0AC209FFF960003C7FD /* AlbumCategroryCell.m */,
-				252CF0AD209FFF960003C7FD /* AlbumCategroryDataVM.h */,
-				252CF0AE209FFF960003C7FD /* AlbumDetailDataVM.h */,
-				252CF0AF209FFF960003C7FD /* AlbumActionDto.h */,
-				252CF0B1209FFF960003C7FD /* AlbumCategroriesController.h */,
-				252CF0B2209FFF960003C7FD /* AlbumDetailController.m */,
-				252CF0B3209FFF960003C7FD /* AlbumRoute.h */,
-				252CF0B4209FFF960003C7FD /* AlbumCameraCollectionCell.m */,
-				1A666C7C30611003A82BBAFE /* AlbumColorStyle.m */,
-				1A66672C9464E6CB79E62581 /* AlbumColorStyle.h */,
 				1A666ACE1455BD05B9E24E7C /* Commen */,
 				1A666CC3FBE52961420D0226 /* Vender */,
+				1A6661B85B3C2A56E20FD51A /* Album */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -397,27 +442,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252CF0B8209FFF960003C7FD /* AlbumSelectCollectionCell.m in Sources */,
 				252CF088209FFF370003C7FD /* ViewController.m in Sources */,
 				252CF093209FFF3A0003C7FD /* main.m in Sources */,
 				252CF085209FFF370003C7FD /* AppDelegate.m in Sources */,
-				252CF0C0209FFF960003C7FD /* AlbumDetailController.m in Sources */,
-				252CF0B9209FFF960003C7FD /* AlbumCategroriesController.m in Sources */,
-				252CF0BC209FFF960003C7FD /* AlbumSelectView.m in Sources */,
-				252CF0B5209FFF960003C7FD /* AlbumDetailDataVM.m in Sources */,
-				252CF0BE209FFF960003C7FD /* AlbumCategroryCell.m in Sources */,
-				252CF0B6209FFF960003C7FD /* AlbumCategroryDataVM.m in Sources */,
-				252CF0BB209FFF960003C7FD /* AlbumRoute.m in Sources */,
-				252CF0C1209FFF960003C7FD /* AlbumCameraCollectionCell.m in Sources */,
-				252CF0BD209FFF960003C7FD /* AlbumCollectionCell.m in Sources */,
-				252CF0BA209FFF960003C7FD /* AlbumActionDto.m in Sources */,
-				252CF0B7209FFF960003C7FD /* AlbumUtils.m in Sources */,
-				1A66658B190DA0147E3A74A7 /* AlbumColorStyle.m in Sources */,
 				1A66672D5C83AC8CFE3163E3 /* MCTableCell.m in Sources */,
 				1A666B3C6CE1E34F770637EE /* MCController.m in Sources */,
 				1A666344073B20198F68A7FF /* MCTableController.m in Sources */,
-				1A6662B12D4C115B6CEC9D48 /* MCAssetsManager.m in Sources */,
-				1A666F00F7C8A34F9948D3C7 /* MCAssetDto.m in Sources */,
 				1A666A8E0D490B6B4A811128 /* GCDGroup.m in Sources */,
 				1A6669873C4396BC84D9AC79 /* GCDQueue.m in Sources */,
 				1A666E9F430EA2D4A68F43F1 /* GCDTimer.m in Sources */,
@@ -426,10 +456,26 @@
 				1A666F957433504FDFAA10FD /* GCDSemaphore.m in Sources */,
 				1A666732559EF30D41A1F5A6 /* MCDataVM.m in Sources */,
 				1A6668348D5EF6DD2C21B37E /* MCCollectionCell.m in Sources */,
+				25409A34219A764400F29736 /* UIView+Corner.m in Sources */,
 				1A6666939FB019817E859E90 /* HUDView.m in Sources */,
 				1A66610FC4397715A227EB1F /* MCGridController.m in Sources */,
 				1A66614BA3CF4D671B59ABAE /* RootTableController.m in Sources */,
 				1A66670451E7D982F59B77EC /* MMRoutable.m in Sources */,
+				1A6667A30495F821A167F3E9 /* AlbumCategroriesController.m in Sources */,
+				1A666CFC4FF35199991D2D24 /* AlbumCategroryDataVM.m in Sources */,
+				1A666ED8FFB5E4C8F52D9507 /* AlbumDetailDataVM.m in Sources */,
+				1A66602FA123CD0DA0C6F331 /* AlbumCameraCollectionCell.m in Sources */,
+				1A66632FEF154CD2399ABA30 /* AlbumDetailController.m in Sources */,
+				1A666ECA21068B5BFDB841C6 /* AlbumRoute.m in Sources */,
+				1A6661CC48FFADF66D0CF124 /* AlbumActionDto.m in Sources */,
+				1A666331DC81714E2168B8F7 /* AlbumCollectionCell.m in Sources */,
+				1A666EFBEA6A26D0411BBF2F /* AlbumCategroryCell.m in Sources */,
+				1A66684AE508D218E1DACA78 /* AlbumColorStyle.m in Sources */,
+				1A6668E0D725516587DE9643 /* AlbumSelectView.m in Sources */,
+				1A6663029146B60A2264897E /* AlbumSelectCollectionCell.m in Sources */,
+				1A666E2723B4DB014CA6698C /* AlbumUtils.m in Sources */,
+				1A66607F165892B199F2EFB0 /* MCAssetsManager.m in Sources */,
+				1A666E226BAA4CFCDBD28E4C /* MCAssetDto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
