@@ -53,8 +53,78 @@
         };
 
         [AlbumRoute pushAlbumList:albumActionDto];
-    } else {
+    } else if (indexPath.row == 1) {
+        AlbumActionDto *albumActionDto = [AlbumActionDto new];
+        albumActionDto.creationType = CreationTypePhotoAlbum;
+        albumActionDto.albumType = AlbumPhoto;
+        albumActionDto.maxNum = 1;
+        albumActionDto.canRepeatSelected = YES;
+        albumActionDto.albumEditorOperationType = AlbumEditorOperationNext;
+        @weakify(self);
+        albumActionDto.albumDetailSeclectionsCallBack = ^(NSArray<MCAssetDto *> *array) {
+            @strongify(self);
+//            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
+        };
 
+        [AlbumRoute pushAlbumList:albumActionDto];
+    } else if (indexPath.row == 2) {
+        AlbumActionDto *albumActionDto = [AlbumActionDto new];
+        albumActionDto.creationType = CreationTypePhotoAlbum;
+        albumActionDto.albumType = AlbumVideo;
+        albumActionDto.maxNum = 4;
+        albumActionDto.canRepeatSelected = YES;
+        albumActionDto.albumEditorOperationType = AlbumEditorOperationNext;
+        @weakify(self);
+        albumActionDto.albumDetailSeclectionsCallBack = ^(NSArray<MCAssetDto *> *array) {
+            @strongify(self);
+//            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
+        };
+
+        [AlbumRoute pushAlbumList:albumActionDto];
+    } else if (indexPath.row == 3) {
+        AlbumActionDto *albumActionDto = [AlbumActionDto new];
+        albumActionDto.creationType = CreationTypePhotoAlbum;
+        albumActionDto.albumType = AlbumVideo;
+        albumActionDto.maxNum = 1;
+        albumActionDto.canRepeatSelected = YES;
+        albumActionDto.albumEditorOperationType = AlbumEditorOperationNext;
+        @weakify(self);
+        albumActionDto.albumDetailSeclectionsCallBack = ^(NSArray<MCAssetDto *> *array) {
+            @strongify(self);
+//            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
+        };
+
+        [AlbumRoute pushAlbumList:albumActionDto];
+
+    } else if (indexPath.row == 4) {
+        AlbumActionDto *albumActionDto = [AlbumActionDto new];
+        albumActionDto.creationType = CreationTypePhotoAlbum;
+        albumActionDto.albumType = AlbumAll;
+        albumActionDto.maxNum = 4;
+        albumActionDto.canRepeatSelected = YES;
+        albumActionDto.albumEditorOperationType = AlbumEditorOperationNext;
+        @weakify(self);
+        albumActionDto.albumDetailSeclectionsCallBack = ^(NSArray<MCAssetDto *> *array) {
+            @strongify(self);
+//            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
+        };
+
+        [AlbumRoute pushAlbumList:albumActionDto];
+
+    } else if (indexPath.row == 5) {
+        AlbumActionDto *albumActionDto = [AlbumActionDto new];
+        albumActionDto.creationType = CreationTypePhotoAlbum;
+        albumActionDto.albumType = AlbumAll;
+        albumActionDto.maxNum = 1;
+        albumActionDto.canRepeatSelected = YES;
+        albumActionDto.albumEditorOperationType = AlbumEditorOperationNext;
+        @weakify(self);
+        albumActionDto.albumDetailSeclectionsCallBack = ^(NSArray<MCAssetDto *> *array) {
+            @strongify(self);
+//            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
+        };
+
+        [AlbumRoute pushAlbumList:albumActionDto];
     }
 }
 
@@ -62,7 +132,7 @@
 
 - (NSArray *)actions {
     if (!_actions) {
-        _actions = @[@"相册"];
+        _actions = @[@"多选相册(图片)", @"单选相册(图片)", @"多选相册(视频)", @"单选相册(视频)", @"混合多选(视频&图片)", @"混合单选(视频&图片)"];
     }
     return _actions;
 }

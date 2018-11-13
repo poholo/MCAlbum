@@ -49,6 +49,19 @@
                 }];
             }
                 break;
+            case AlbumAll: {
+                [[MCAssetsManager manager] getAssetsFromFetchResult:self.currentAssetModel.result allowPickingVideo:YES completion:^(NSArray<MCAssetDto *> *models) {
+                    @strongify(self);
+                    self.currentPos = @(-1);
+                    [models enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(MCAssetDto *model, NSUInteger idx, BOOL *stop) {
+                        @strongify(self);
+                        [self.dataArray addObject:model];
+                    }];
+                    [subscriber sendNext:self.dataArray];
+                    [subscriber sendCompleted];
+                }];
+            }
+                break;
         }
         return nil;
     }];
