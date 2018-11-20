@@ -64,9 +64,11 @@
 		1A6663853769D71CDFF8113C /* AlbumSelectCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumSelectCollectionCell.h; sourceTree = "<group>"; };
 		1A6663A8226938B4850403BE /* MCAssetsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAssetsManager.m; sourceTree = "<group>"; };
 		1A6663B074FB84C3FB50F6EA /* MCAssetDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAssetDto.h; sourceTree = "<group>"; };
+		1A666402F7C7F4BC3F8DE9DB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A66640AF0F50598560F7488 /* AlbumRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumRoute.m; sourceTree = "<group>"; };
 		1A666446AB04576358D8B7CB /* AlbumCategroryDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCategroryDataVM.m; sourceTree = "<group>"; };
 		1A666459F0D8D265A5ED91E2 /* GCDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDUtils.h; sourceTree = "<group>"; };
+		1A6664E7D250F7FDFB575BE4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		1A6664EB27B1A6BA2362BDAB /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
 		1A6664EC6A17F941DFFC7075 /* AlbumColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumColor.h; sourceTree = "<group>"; };
 		1A666544E2D2AA87D649A29C /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
@@ -98,7 +100,9 @@
 		1A666AFE1DE3C2845E9F5F8C /* HUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDView.h; sourceTree = "<group>"; };
 		1A666B388D93E47C2C56884B /* AlbumCameraCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCameraCollectionCell.m; sourceTree = "<group>"; };
 		1A666B67E62445EE5301D183 /* AlbumDetailDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailDataVM.m; sourceTree = "<group>"; };
+		1A666B9006B68080C576F87B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		1A666BACE3065E8F950930AA /* MCAssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAssetsManager.h; sourceTree = "<group>"; };
+		1A666C0243C40CCC95AF4D54 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		1A666C461FF53F745AE109E2 /* RootTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableController.m; sourceTree = "<group>"; };
 		1A666D0A904AB038F99BB658 /* AlbumUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumUtils.h; sourceTree = "<group>"; };
 		1A666D183FCBD4EC178B0706 /* MCCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCollectionCell.m; sourceTree = "<group>"; };
@@ -168,6 +172,16 @@
 				1A6662E199BE6CC6F5AEA26D /* Manager */,
 			);
 			path = Album;
+			sourceTree = "<group>";
+		};
+		1A6661C8E6933C35785F494C /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				1A666B9006B68080C576F87B /* 1.png */,
+				1A6664E7D250F7FDFB575BE4 /* 2.png */,
+				1A666C0243C40CCC95AF4D54 /* 3.png */,
+			);
+			path = ScreenShot;
 			sourceTree = "<group>";
 		};
 		1A6662E199BE6CC6F5AEA26D /* Manager */ = {
@@ -289,6 +303,8 @@
 				252CF081209FFF370003C7FD /* Products */,
 				A22A4DFBBBB5B42B43089C8A /* Pods */,
 				E1DA848D9ECEC1FED24D77C0 /* Frameworks */,
+				1A666402F7C7F4BC3F8DE9DB /* README.md */,
+				1A6661C8E6933C35785F494C /* ScreenShot */,
 			);
 			sourceTree = "<group>";
 		};
@@ -616,16 +632,17 @@
 			baseConfigurationReference = C4361B05B999FC99966FF7A8 /* Pods-MCAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZZRVMAY782;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6FNUHS4H7D;
 				INFOPLIST_FILE = MCAlbum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mjc.MCAlbum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gym.MCAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RootDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -635,16 +652,17 @@
 			baseConfigurationReference = 1619A1B3BFE953EAD2E0288B /* Pods-MCAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZZRVMAY782;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6FNUHS4H7D;
 				INFOPLIST_FILE = MCAlbum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mjc.MCAlbum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gym.MCAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RootDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
