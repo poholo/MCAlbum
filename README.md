@@ -7,7 +7,10 @@ MCAlbum是对iOS相册高度自定的一个项目，包含以下功能：
 3 support iClound
 
 ## Screenshot
-![功能列表](./ScreenShot/1.png)
+<center>
+<img src="./ScreenShot/1.png" width="25%" height="25%" />
+功能列表
+</center>
 
 ![相册列表](./ScreenShot/2.png)
 
