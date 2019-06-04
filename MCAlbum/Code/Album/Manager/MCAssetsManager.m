@@ -246,7 +246,7 @@
             else if (asset.mediaType == PHAssetMediaTypeAudio) type = TZAssetModelMediaTypeAudio;
             else if (asset.mediaType == PHAssetMediaTypeImage) {
                 if (iOS9_1Later) {
-                    // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
+                     if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
                 }
             }
             if (!allowPickingVideo && type == TZAssetModelMediaTypeVideo) return;
@@ -292,7 +292,7 @@
         else if (asset.mediaType == PHAssetMediaTypeAudio) type = TZAssetModelMediaTypeAudio;
         else if (asset.mediaType == PHAssetMediaTypeImage) {
             if (iOS9_1Later) {
-                // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
+                 if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
             }
         }
         NSString *timeLength = type == TZAssetModelMediaTypeVideo ? [NSString stringWithFormat:@"%0.0f", asset.duration] : @"";

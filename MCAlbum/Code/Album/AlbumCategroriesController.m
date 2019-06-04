@@ -16,6 +16,7 @@
 #import "AlbumUtils.h"
 #import "GCDQueue.h"
 #import "HUDView.h"
+#import "AlbumColor.h"
 
 @interface AlbumCategroriesController () <AlbumSelectViewDelegate>
 
@@ -43,6 +44,7 @@
     [super viewDidLoad];
 
     self.title = @"相机胶卷";
+    self.view.backgroundColor = [AlbumColor colorIII];
 
     [self.tableView registerClass:[AlbumCategroryCell class] forCellReuseIdentifier:[AlbumCategroryCell identifier]];
 

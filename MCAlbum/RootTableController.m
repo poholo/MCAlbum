@@ -16,6 +16,8 @@
 
 @property(nonatomic, strong) NSArray *actions;
 
+@property(nonatomic, strong) UISegmentedControl *segmentedControl;
+
 @end
 
 @implementation RootTableController
@@ -24,6 +26,8 @@
     [super viewDidLoad];
     MMRoutable *routable = [MMRoutable sharedRouter];
     routable.navigationController = self.navigationController;
+
+    self.navigationItem.titleView = self.segmentedControl;
     [self.tableView registerClass:[MCTableCell class] forCellReuseIdentifier:[MCTableCell identifier]];
     [self.tableView reloadData];
 }
@@ -39,11 +43,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    AlbumActionDto *albumActionDto = [AlbumActionDto new];
     if (indexPath.row == 0) {
-        AlbumActionDto *albumActionDto = [AlbumActionDto new];
         albumActionDto.creationType = CreationTypePhotoAlbum;
         albumActionDto.albumType = AlbumPhoto;
-        albumActionDto.maxNum = 4;
+        albumActionDto.maxNum = 10;
         albumActionDto.canRepeatSelected = YES;
         albumActionDto.albumEditorOperationType = AlbumEditorOperationNext;
         @weakify(self);
@@ -52,9 +56,7 @@
 //            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
         };
 
-        [AlbumRoute pushAlbumList:albumActionDto];
     } else if (indexPath.row == 1) {
-        AlbumActionDto *albumActionDto = [AlbumActionDto new];
         albumActionDto.creationType = CreationTypePhotoAlbum;
         albumActionDto.albumType = AlbumPhoto;
         albumActionDto.maxNum = 1;
@@ -66,9 +68,7 @@
 //            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
         };
 
-        [AlbumRoute pushAlbumList:albumActionDto];
     } else if (indexPath.row == 2) {
-        AlbumActionDto *albumActionDto = [AlbumActionDto new];
         albumActionDto.creationType = CreationTypePhotoAlbum;
         albumActionDto.albumType = AlbumVideo;
         albumActionDto.maxNum = 4;
@@ -80,9 +80,7 @@
 //            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
         };
 
-        [AlbumRoute pushAlbumList:albumActionDto];
     } else if (indexPath.row == 3) {
-        AlbumActionDto *albumActionDto = [AlbumActionDto new];
         albumActionDto.creationType = CreationTypePhotoAlbum;
         albumActionDto.albumType = AlbumVideo;
         albumActionDto.maxNum = 1;
@@ -93,11 +91,8 @@
             @strongify(self);
 //            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
         };
-
-        [AlbumRoute pushAlbumList:albumActionDto];
 
     } else if (indexPath.row == 4) {
-        AlbumActionDto *albumActionDto = [AlbumActionDto new];
         albumActionDto.creationType = CreationTypePhotoAlbum;
         albumActionDto.albumType = AlbumAll;
         albumActionDto.maxNum = 4;
@@ -109,10 +104,7 @@
 //            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
         };
 
-        [AlbumRoute pushAlbumList:albumActionDto];
-
     } else if (indexPath.row == 5) {
-        AlbumActionDto *albumActionDto = [AlbumActionDto new];
         albumActionDto.creationType = CreationTypePhotoAlbum;
         albumActionDto.albumType = AlbumAll;
         albumActionDto.maxNum = 1;
@@ -124,8 +116,13 @@
 //            self.editStepManager.currentSelectedAssetArray = [NSMutableArray arrayWithArray:array];
         };
 
-        [AlbumRoute pushAlbumList:albumActionDto];
     }
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        [AlbumRoute pushAlbumList:albumActionDto];
+    } else if (self.segmentedControl.selectedSegmentIndex == 1) {
+        [AlbumRoute presentAlbumList:albumActionDto];
+    }
+
 }
 
 #pragma mark -getter
@@ -135,5 +132,13 @@
         _actions = @[@"多选相册(图片)", @"单选相册(图片)", @"多选相册(视频)", @"单选相册(视频)", @"混合多选(视频&图片)", @"混合单选(视频&图片)"];
     }
     return _actions;
+}
+
+- (UISegmentedControl *)segmentedControl {
+    if (!_segmentedControl) {
+        _segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"push", @"present"]];
+        _segmentedControl.selectedSegmentIndex = 0;
+    }
+    return _segmentedControl;
 }
 @end

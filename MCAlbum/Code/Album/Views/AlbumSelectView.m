@@ -127,12 +127,13 @@
                 NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(3, 1)];
         _titleLabel.attributedText = attributedString;
     } else if (albumType == AlbumPhoto) {
-        _titleLabel.text = [NSString stringWithFormat:@"请选择%zd-%zd张%@", min, max, albumType == AlbumVideo ? @"视频" : @"照片"];
+        NSString *render = [NSString stringWithFormat:@"%zd-%zd张", min, max];
+        _titleLabel.text = [NSString stringWithFormat:@"请选择%@%@", render, albumType == AlbumVideo ? @"视频" : @"照片"];
         NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_titleLabel.text attributes:
                 @{NSForegroundColorAttributeName: [AlbumColor colorMinorI],
                         NSFontAttributeName: [UIFont systemFontOfSize:12]}];
         [attributedString                                  addAttributes:@{NSForegroundColorAttributeName: [AlbumColor colorI],
-                NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(3, 3)];
+                NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(3, render.length)];
         _titleLabel.attributedText = attributedString;
     }
 }
@@ -161,6 +162,8 @@
 
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.showsVerticalScrollIndicator = NO;
         [_collectionView registerClass:[AlbumSelectCollectionCell class] forCellWithReuseIdentifier:[AlbumSelectCollectionCell identifier]];
     }
     return _collectionView;

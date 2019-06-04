@@ -129,7 +129,7 @@
 		252CF08F209FFF3A0003C7FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		252CF091209FFF3A0003C7FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		252CF092209FFF3A0003C7FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		252CF0C220A001B30003C7FD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		252CF0C220A001B30003C7FD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		252CF0C420A047280003C7FD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		252CF0C620A047310003C7FD /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		25409A32219A764400F29736 /* UIView+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
@@ -632,7 +632,8 @@
 			baseConfigurationReference = C4361B05B999FC99966FF7A8 /* Pods-MCAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FNUHS4H7D;
 				INFOPLIST_FILE = MCAlbum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -642,7 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gym.MCAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = RootDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -652,7 +653,8 @@
 			baseConfigurationReference = 1619A1B3BFE953EAD2E0288B /* Pods-MCAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FNUHS4H7D;
 				INFOPLIST_FILE = MCAlbum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -662,7 +664,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gym.MCAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = RootDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
